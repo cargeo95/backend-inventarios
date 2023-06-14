@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  proyectos-backend:
+    container_name: proyectos-backend
+    image: proyectos-backend:v1
+    build:
+      context: .
+    ports:
+      - 4001:4001
+    networks:
+      - proyectos-app
+networks:
+  proyectos-app:
